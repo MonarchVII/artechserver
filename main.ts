@@ -206,5 +206,5 @@ app.get("/quiz/:id", verifyAuth, async (c) => {
   return c.json(doc.data() as QuizModel);
 });
 
-Deno.serve(app.fetch, { port: 8787 });
-console.log("🚀 Server running on http://localhost:8787");
+Deno.serve(app.fetch);
+console.log("🚀 Server running on http://localhost:8000");
